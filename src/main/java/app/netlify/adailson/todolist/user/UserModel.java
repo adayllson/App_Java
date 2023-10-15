@@ -20,7 +20,7 @@ public class UserModel {
     @GeneratedValue(generator = "UUID")
     private UUID id;
 
-    //Notação que define que a coluna no banco tenha um valor único
+    //Notação do spring data que define que a coluna no banco tenha um valor único
     @Column(unique = true)
     private String username;
     private String name;
